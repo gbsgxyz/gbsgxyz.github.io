@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("2020-10-20 00:00:00").getTime();
+var countDownDate = new Date("Oct 10, 2020 10:10:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -16,13 +16,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = Ngày + "d " + Giờ + "h "
+  // Display the result in the element with id="time73x5"
+  document.getElementById("time73x5").innerHTML = Ngày + "d " + Giờ + "h "
   + Phút + "m " + Giây + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("73x5").innerHTML = "mÚc nÀo";
+    document.getElementById("time73x5").innerHTML = "mÚc nÀo";
   }
 }, 1000);
